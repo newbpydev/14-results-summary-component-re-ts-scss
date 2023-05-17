@@ -1,9 +1,23 @@
 @font-face {
   font-family: 'HankenGrotesk-Medium';
-  src: url();
+  src: url('~/assets/fonts/static/HankenGrotesk-Medium.ttf');
 }
 
+@font-face {
+  font-family: 'HankenGrotesk-Bold';
+  src: url('~/assets/fonts/static/HankenGrotesk-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'HankenGrotesk-ExtraBold';
+  src: url('~/assets/fonts/static/HankenGrotesk-ExtraBold.ttf');
+}
+
+// Font Stack
+$font-stack: 'HankenGrotesk-Medium', sans-serif;
+
 :root {
+
   // Font-size
   --text-body: 1.8rem;
   --text-md: 2.4rem;
@@ -22,11 +36,16 @@
   // Background Color
   --bg-gradient-2: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0), 100%);
   --bg-gradient-1: linear-gradient(180deg, #7755FF, 0%, #6943FF, 0.01%, #2F2CE9 100%);
+  --bg-gradient-red-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+  --bg-gradient-yellow-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FFB21E;
+  --bg-gradient-green-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
+  --bg-gradient-blue-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
   --bg-very-light-blue: #ECF2FF;
   --bg-white: #FFF;
 
   // Border Radius
   --border-radius: 3.2rem;
+  --border-radius-sm: 1.2rem;
   --border-radius-bottom-left-right: 0px 0px 32px 32px;
   --border-radius-pill: 12.8rem;
 
@@ -36,4 +55,10 @@
 
 html {
   font-size: 10px;
+}
+
+body {
+  font: var(--text-body) $font-stack;
+  background: var(--bg-white);
+  min-height: 100vh;
 }
