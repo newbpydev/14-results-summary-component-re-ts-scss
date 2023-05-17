@@ -1,0 +1,11 @@
+@use 'variables' as var;
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font: var.$text-body var.$font-stack;
+  background: var.$bg-white;
+  min-height: 100vh;
+}

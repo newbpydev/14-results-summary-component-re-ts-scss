@@ -1,5 +1,5 @@
 // 95% white 
-@mixin bg-gradient-white($bg-color) {
+@mixin bg-gradient-white-with-color($bg-color) {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
     $bg-color;
 }

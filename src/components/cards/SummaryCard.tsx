@@ -1,6 +1,6 @@
 import React from "react";
 import SummaryCardAverageScore from "./SummaryCardAverageScore";
-import SummaryCardList from "./SummaryCardList";
+import SummaryCardStats from "./SummaryCardStats";
 
 export interface Result {
   reaction: number;
@@ -17,7 +17,7 @@ function SummaryCard({ result }: Props) {
   return (
     <section>
       <SummaryCardAverageScore />
-      <SummaryCardList />
+      <SummaryCardStats />
     </section>
   );
 }
