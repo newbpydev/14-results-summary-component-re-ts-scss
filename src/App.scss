@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'HankenGrotesk-Medium';
+  src: url();
+}
+
+:root {
+  // Font-size
+  --text-body: 1.8rem;
+  --text-md: 2.4rem;
+  --text-lg: 3.2rem;
+  --text-xl: 7.2rem;
+
+  // Text Color
+  --text-light-blue: #CAC9FF;
+  --text-white: #fff;
+  --text-dark-navy: #303b59;
+  --text-red: #FF5555;
+  --text-yellow: #FFB21E;
+  --text-green: #00BB8F;
+  --text-blue: #1125D6;
+
+  // Background Color
+  --bg-gradient-2: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0), 100%);
+  --bg-gradient-1: linear-gradient(180deg, #7755FF, 0%, #6943FF, 0.01%, #2F2CE9 100%);
+  --bg-very-light-blue: #ECF2FF;
+  --bg-white: #FFF;
+
+  // Border Radius
+  --border-radius: 3.2rem;
+  --border-radius-bottom-left-right: 0px 0px 32px 32px;
+  --border-radius-pill: 12.8rem;
+
+  // Drop Shadow
+  --shadow: drop-shadow(0px 30px 60px rgba(61, 108, 236, 0.15));
+}
+
+html {
+  font-size: 10px;
+}
