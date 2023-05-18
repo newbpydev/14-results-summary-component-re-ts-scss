@@ -6,8 +6,6 @@ interface Props {
 
 // * COMPONENT: SummaryCardStatItem
 function SummaryCardStatItem({ category, score, icon }: Props) {
-  const renderIcon = `${icon}`;
-
   // switch (category) {
   //   case 'reaction':
   //     renderIcon =
@@ -19,8 +17,7 @@ function SummaryCardStatItem({ category, score, icon }: Props) {
 
   return (
     <div className="summary-stats__score">
-      {/* <image href={renderIcon} className="summary-stats__score-icon"/> */}
-      <img src={icon} alt={category} />
+      <img src={icon} alt={category} className="summary-stats__score-icon" />
 
       <h3 className="summary-stats__score-category">{category}</h3>
       <p className="summary-stats__score-result">

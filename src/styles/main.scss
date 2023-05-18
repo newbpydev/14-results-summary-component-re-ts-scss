@@ -1,6 +1,7 @@
-@import 'base';
-@import 'components';
-@import 'fonts';
-@import 'layout';
-@import 'mixins';
-@import 'variables';
+@use 'reset';
+@use 'base';
+@use 'components';
+@use 'fonts';
+@use 'layout';
+@use 'mixins';
+@use 'variables';

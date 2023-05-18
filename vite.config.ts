@@ -10,4 +10,19 @@ export default defineConfig({
       "~": path.resolve(__dirname, "src"),
     },
   },
+  // css: {
+  //   preprocessorOptions: {
+  //     scss: {
+  //       additionalData: `
+  //       @use 'reset';
+  //       @import 'base';
+  //     @import 'components';
+  //     @import 'fonts';
+  //     @import 'layout';
+  //     @import 'mixins';
+  //     @import 'variables';
+  //       `,
+  //     },
+  //   },
+  // },
 });

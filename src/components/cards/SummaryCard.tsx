@@ -12,7 +12,7 @@ function SummaryCard({ results }: Props) {
     results.reduce((sum, score) => sum + score.score, 0) / results.length
   );
   return (
-    <article>
+    <article className="summary-card">
       <SummaryCardAverageScore score={score} />
       <SummaryCardStats results={results} />
     </article>

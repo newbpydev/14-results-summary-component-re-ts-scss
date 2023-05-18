@@ -1,0 +1,9 @@
+@use '../variables' as var;
+
+.average-score {
+  background: var.$bg-gradient-1;
+  text-align: center;
+  padding: 2.4rem 5.8rem 4rem;
+  border-radius: var.$border-radius-bottom-left-right;
+  color: var.$text-light-blue;
+}
