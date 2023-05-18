@@ -2,6 +2,7 @@ interface Props {
   score: number;
 }
 
+// * COMPONENT: SummaryCardAverageScore
 function SummaryCardAverageScore({ score }: Props) {
   return (
     <div className="average-score">

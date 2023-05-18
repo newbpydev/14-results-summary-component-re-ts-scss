@@ -1,9 +1,14 @@
 // import { Result } from "./SummaryCard";
 
+// * COMPONENT: SummaryCardStats
 function SummaryCardStats() {
+  const renderScores = "";
+
   return (
     <div className="summary-stats">
       <h2 className="summary-stats__heading">Summary</h2>
+
+      <div className="summary-stats__scores">{renderScores}</div>
 
       {/* Reaction
       <div className="summary-stats__scores">

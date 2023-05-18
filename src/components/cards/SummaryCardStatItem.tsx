@@ -4,6 +4,7 @@ interface Props {
   icon: string;
 }
 
+// * COMPONENT: SummaryCardStatItem
 function SummaryCardStatItem({ title, score, icon }: Props) {
   const renderIcon = `${icon}`;
 
