@@ -5,14 +5,14 @@ import { ScoreItem } from "./types/score-item";
 import { json } from "stream/consumers";
 
 function App() {
-  const [result, setResult] = useState<ScoreItem[]>();
+  const [results, setResults] = useState<ScoreItem[]>();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const res = await fetch("/data/data.json");
         const jsonData: ScoreItem[] = await res.json();
-        setResult(jsonData);
+        setResults(jsonData);
       } catch (error) {
         console.error("Error fetching data: ", error);
       }
@@ -21,7 +21,7 @@ function App() {
     fetchData();
   }, []);
 
-  return <main>{result && <SummaryCard result={result} />}</main>;
+  return <main>{results && <SummaryCard results={results} />}</main>;
 }
 
 export default App;

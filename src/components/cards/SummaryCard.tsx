@@ -3,19 +3,18 @@ import SummaryCardAverageScore from "./SummaryCardAverageScore";
 import SummaryCardStats from "./SummaryCardStats";
 
 interface Props {
-  result: ScoreItem[];
+  results: ScoreItem[];
 }
 
 // * COMPONENT: SummaryCard
-function SummaryCard({ result }: Props) {
+function SummaryCard({ results }: Props) {
   const score = Math.floor(
-    result.reduce((sum, score) => sum + score.score, 0) / result.length
+    results.reduce((sum, score) => sum + score.score, 0) / results.length
   );
-
   return (
     <article>
       <SummaryCardAverageScore score={score} />
-      <SummaryCardStats />
+      <SummaryCardStats results={results} />
     </article>
   );
 }
