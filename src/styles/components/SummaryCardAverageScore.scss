@@ -34,7 +34,9 @@
       line-height: 7.2rem;
     }
 
-    &-out-of {}
+    &-out-of {
+      font-size: var.$text-sm;
+    }
   }
 
   &__info {

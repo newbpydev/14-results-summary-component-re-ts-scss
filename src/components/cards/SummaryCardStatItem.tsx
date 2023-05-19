@@ -7,7 +7,6 @@ interface Props {
 // * COMPONENT: SummaryCardStatItem
 function SummaryCardStatItem({ category, score, icon }: Props) {
   let colorMix: "red" | "yellow" | "green" | "blue";
-  let color: "#ff5555" | "#ffb21e" | "#00bb8f" | "#1125d6";
   switch (category) {
     case "Reaction":
       colorMix = "red";
