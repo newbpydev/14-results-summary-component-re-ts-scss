@@ -23,5 +23,11 @@
     text-align: center;
     padding: 1.6rem;
     border-radius: var.$border-radius-pill;
+    transition: background 3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background: var.$bg-gradient-1;
+    }
   }
 }
