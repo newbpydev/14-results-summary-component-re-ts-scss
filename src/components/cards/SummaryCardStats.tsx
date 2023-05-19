@@ -25,7 +25,9 @@ function SummaryCardStats({ results }: Props) {
 
       <div className="summary-stats__scores">{renderScores}</div>
 
-      <button type="button">Continue</button>
+      <button type="button" className="summary-stats__button">
+        Continue
+      </button>
 
       {/* Reaction
       <div className="summary-stats__scores">

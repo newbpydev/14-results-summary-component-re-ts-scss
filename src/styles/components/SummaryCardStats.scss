@@ -1,0 +1,27 @@
+@use '../variables' as var;
+
+.summary-stats {
+  padding: 2.4rem 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.4rem;
+  color: var.$text-dark-navy;
+
+  &__heading {
+    font-family: var.$font-stack-bold;
+  }
+
+  &__scores {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.6rem;
+  }
+
+  &__button {
+    background: var.$bg-dark-navy;
+    color: var.$bg-white;
+    text-align: center;
+    padding: 1.6rem;
+    border-radius: var.$border-radius-pill;
+  }
+}

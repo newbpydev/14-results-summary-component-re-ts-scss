@@ -3,3 +3,7 @@
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
     $bg-color;
 }
+
+@mixin text-color($text-color) {
+  color: $text-color;
+}

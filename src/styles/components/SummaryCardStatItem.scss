@@ -1,0 +1,56 @@
+@use '../variables' as var;
+@use '../mixins' as mix;
+
+.summary-stat {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.75rem 1.6rem;
+  border-radius: var.$border-radius-sm;
+
+  &.red {
+    @include mix.bg-gradient-white-with-color(var.$text-red);
+
+    .summary-stat__category {
+      @include mix.text-color(var.$text-red);
+    }
+  }
+
+  &.yellow {
+    @include mix.bg-gradient-white-with-color(var.$text-yellow);
+
+    .summary-stat__category {
+      @include mix.text-color(var.$text-yellow);
+    }
+  }
+
+  &.green {
+    @include mix.bg-gradient-white-with-color(var.$text-green);
+
+    .summary-stat__category {
+      @include mix.text-color(var.$text-green);
+    }
+  }
+
+  &.blue {
+    @include mix.bg-gradient-white-with-color(var.$text-blue);
+
+    .summary-stat__category {
+      @include mix.text-color(var.$text-blue);
+    }
+  }
+
+
+  &__icon-title {
+    display: flex;
+    column-gap: 1.2rem;
+  }
+
+  &__result {
+    font-family: var.$font-stack-bold;
+    color: lighten(var.$text-dark-navy, 50%);
+
+    &-value {
+      color: var.$text-dark-navy;
+    }
+  }
+}
