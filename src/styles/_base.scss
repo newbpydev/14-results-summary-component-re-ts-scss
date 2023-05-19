@@ -1,4 +1,5 @@
 @use 'variables' as var;
+@use 'mixins' as mix;
 
 html {
   font-size: 10px;
@@ -9,4 +10,15 @@ body {
   line-height: 2.3rem;
   background: var.$bg-white;
   min-height: 100vh;
+
+  @include mix.media-medium {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // @include mix.media-large {
+  //   background: var.$bg-very-light-blue;
+
+  // }
 }

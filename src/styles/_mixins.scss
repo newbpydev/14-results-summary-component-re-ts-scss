@@ -1,3 +1,5 @@
+@use 'variables' as var;
+
 // 95% white 
 @mixin bg-gradient-white-with-color($bg-color) {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
@@ -6,4 +8,23 @@
 
 @mixin text-color($text-color) {
   color: $text-color;
+}
+
+// Media
+@mixin media-medium {
+  @media (min-width: var.$breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin media-large {
+  @media (min-width: var.$breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin media-xlarge {
+  @media (min-width: var.$breakpoint-xl) {
+    @content;
+  }
 }

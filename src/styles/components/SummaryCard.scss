@@ -1,6 +1,16 @@
+@use '../variables' as var;
+@use '../mixins' as mix;
+
 .summary-card {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  @include mix.media-large {
+    flex-direction: row;
+    min-height: 51.2rem;
+    min-width: 73.6rem;
+    background: var.$bg-white;
+  }
 
 }

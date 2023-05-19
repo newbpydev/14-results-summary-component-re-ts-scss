@@ -1,4 +1,5 @@
 @use '../variables' as var;
+@use '../mixins' as mix;
 
 .summary-stats {
   padding: 2.4rem 3rem 3rem;
@@ -6,6 +7,10 @@
   flex-direction: column;
   row-gap: 2.4rem;
   color: var.$text-dark-navy;
+
+  @include mix.media-large {
+    flex-grow: 1;
+  }
 
   &__heading {
     font-family: var.$font-stack-bold;

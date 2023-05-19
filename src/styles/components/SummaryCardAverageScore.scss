@@ -1,4 +1,5 @@
 @use '../variables' as var;
+@use '../mixins' as mix;
 
 .average-score {
   background: var.$bg-gradient-1;
@@ -12,9 +13,23 @@
   row-gap: 2.4rem;
   box-shadow: var.$shadow;
 
+  @include mix.media-large {
+    padding: 3.8rem 5.4rem 4.6rem;
+    width: 36.8rem;
+    row-gap: 0;
+    border-radius: var.$border-radius;
+    box-shadow: none;
+  }
+
   &__title {
     line-height: 2.3rem;
     font-family: var.$font-stack-bold;
+
+    @include mix.media-large {
+      margin-bottom: 3.5rem;
+      font-size: var.$text-md;
+      line-height: 3.1rem;
+    }
   }
 
   &__results {
@@ -25,6 +40,11 @@
     width: 14rem;
     height: auto;
 
+    @include mix.media-large {
+      width: 20rem;
+      padding: 5.5rem;
+      margin-bottom: 2.8rem;
+    }
 
     &-score {
       font-family: var.$font-stack-extra-bold;
@@ -32,10 +52,20 @@
 
       color: var.$text-white;
       line-height: 7.2rem;
+
+      @include mix.media-large {
+        font-size: var.$text-xl;
+        margin-bottom: .4rem;
+      }
     }
 
     &-out-of {
       font-size: var.$text-sm;
+
+      @include mix.media-large {
+        font-size: var.$text-body;
+        opacity: .52;
+      }
     }
   }
 
@@ -47,11 +77,23 @@
       font-family: var.$font-stack-bold;
       line-height: 3.1rem;
       margin-bottom: .8rem;
+
+      @include mix.media-large {
+        font-size: var.$text-lg;
+        line-height: 4.2rem;
+        margin-bottom: 1.4rem;
+      }
     }
 
     &-description {
       font-size: var.$text-sm;
       line-height: 2.1rem;
+
+      @include mix.media-large {
+        font-size: var.$text-body;
+        line-height: 2.3rem;
+        font-weight: 500;
+      }
     }
   }
 

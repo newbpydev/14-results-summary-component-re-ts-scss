@@ -1,3 +1,8 @@
+// Media BreakPoints
+$breakpoint-md: 48em;
+$breakpoint-lg: 64em;
+$breakpoint-xl: 80em;
+
 // Font Stack
 $font-stack: 'HankenGrotesk-Medium', sans-serif;
 $font-stack-bold: 'HankenGrotesk-Bold', sans-serif;
@@ -37,16 +42,6 @@ $bg-gradient-green-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(
 $bg-gradient-blue-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
   #1125D6;
 $bg-dark-navy: #303b59;
-
-// $bg-gradient-red-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
-//   #FF5555;
-// $bg-gradient-yellow-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
-//   #FFB21E;
-// $bg-gradient-green-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
-//   #00BB8F;
-// $bg-gradient-blue-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
-//   #1125D6;
-
 $bg-very-light-blue: #ECF2FF;
 $bg-white: #FFF;
 
