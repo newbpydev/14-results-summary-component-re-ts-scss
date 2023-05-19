@@ -17,8 +17,8 @@ body {
     align-items: center;
   }
 
-  // @include mix.media-large {
-  //   background: var.$bg-very-light-blue;
+  @include mix.media-large {
+    background: var.$bg-very-light-blue;
 
-  // }
+  }
 }
