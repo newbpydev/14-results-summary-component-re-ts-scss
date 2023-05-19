@@ -3,7 +3,56 @@
 .average-score {
   background: var.$bg-gradient-1;
   text-align: center;
-  padding: 2.4rem 5.8rem 4rem;
+  padding: 2.4rem 5.75rem 4rem;
   border-radius: var.$border-radius-bottom-left-right;
   color: var.$text-light-blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.4rem;
+  box-shadow: var.$shadow;
+
+  &__title {
+    line-height: 2.3rem;
+    font-family: var.$font-stack-bold;
+  }
+
+  &__results {
+    background: var.$bg-gradient-2;
+    border-radius: var.$border-radius-pill;
+    font-weight: bold;
+    padding: 2.5rem;
+    width: 14rem;
+    height: auto;
+
+
+    &-score {
+      font-family: var.$font-stack-extra-bold;
+      font-size: 5.6rem;
+
+      color: var.$text-white;
+      line-height: 7.2rem;
+    }
+
+    &-out-of {}
+  }
+
+  &__info {
+
+    &-grade {
+      font-size: var.$text-md;
+      color: var.$text-white;
+      font-family: var.$font-stack-bold;
+      line-height: 3.1rem;
+      margin-bottom: .8rem;
+    }
+
+    &-description {
+      font-size: var.$text-sm;
+      line-height: 2.1rem;
+    }
+  }
+
+
+
 }

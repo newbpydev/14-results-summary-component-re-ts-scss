@@ -9,14 +9,16 @@ function SummaryCardAverageScore({ score }: Props) {
       <h1 className="average-score__title">Your Result</h1>
 
       <div className="average-score__results">
-        <h2 className="average-score__score">{score}</h2>
-        <p className="average-score__out-of">of 100</p>
+        <h2 className="average-score__results-score">{score}</h2>
+        <p className="average-score__results-out-of">of 100</p>
       </div>
 
-      <h2 className="average-score__grade">Great</h2>
-      <p className="average-score__description">
-        Your performance exceed 65% of the people conducting the test here!
-      </p>
+      <div className="average-score__info">
+        <h2 className="average-score__info-grade">Great</h2>
+        <p className="average-score__info-description">
+          Your performance exceed 65% of the people conducting the test here!
+        </p>
+      </div>
     </div>
   );
 }
