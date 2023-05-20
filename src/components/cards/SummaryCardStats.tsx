@@ -28,17 +28,6 @@ function SummaryCardStats({ results }: Props) {
       <button type="button" className="summary-stats__button">
         Continue
       </button>
-
-      {/* Reaction
-      <div className="summary-stats__scores">
-        <div className="summary-stats__score">
-          <span className="summary-stats__score-icon">icon</span>
-          <h3 className="summary-stats__score-title">Reaction</h3>
-          <p className="summary-stats__score-result">
-            <span className="summary-stats__value">{reaction}</span> / 100
-          </p>
-        </div>
-      </div> */}
     </div>
   );
 }
