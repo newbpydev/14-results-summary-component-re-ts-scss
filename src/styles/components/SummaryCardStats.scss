@@ -11,16 +11,23 @@
   @include mix.media-large {
     flex-grow: 1;
     padding: 3.8rem 4rem 4.6rem;
+    row-gap: 2.8rem;
   }
 
   &__heading {
     font-family: var.$font-stack-bold;
+    font-size: var.$text-md;
+    line-height: 3.1rem;
   }
 
   &__scores {
     display: flex;
     flex-direction: column;
     row-gap: 1.6rem;
+
+    @include mix.media-large {
+      margin-bottom: 1.3rem;
+    }
   }
 
   &__button {
